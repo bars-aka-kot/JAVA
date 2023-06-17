@@ -22,7 +22,7 @@ public class Homework {
     // Task 3
     static ArrayList<Integer> mult(int i) {
         ArrayList<Integer> m1 = new ArrayList<>();
-        for (int j = i; j <= 10000; j++) { // Short.MAX_VALUE = 32767
+        for (int j = i; j <= Short.MAX_VALUE; j++) { // Short.MAX_VALUE = 32767
             if (j % i == 0)
                 m1.add(j);
         }
@@ -32,7 +32,7 @@ public class Homework {
     // Task 4
     static ArrayList<Integer> nonmult(int i) {
         ArrayList<Integer> m2 = new ArrayList<>();
-        for (int j = i; j <= 10000; j++) { // Short.MIN_VALUE = -32768
+        for (int j = i; j < 10000; j++) { // Short.MIN_VALUE = -32768
             if (j % i != 0)
                 m2.add(j);
         }
