@@ -1,3 +1,5 @@
+package Seminar1;
+
 import java.util.*;
 
 public class program2 {
