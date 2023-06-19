@@ -1,39 +1,40 @@
 package Seminar1;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class program2 {
     public static void main(String[] args) {
-        Scanner iScanner = new Scanner(System.in);
-        System.out.println("Введите первое число: ");
-        float first = iScanner.nextFloat();
-        System.out.println("Введите второе число: ");
-        float second = iScanner.nextFloat();
-
-        System.out.println("Введите действие: ");
-        String word = iScanner.nextLine();
-        float res = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите первое число: ");
+        String first = scanner.nextLine();
+        System.out.print("Введите второе число: ");
+        String second = scanner.nextLine();
+        System.out.print("Введите действие: ");
+        String word = scanner.nextLine();
         switch (word) {
             case "+":
-                res = first + second;
-                System.out.printf("%f\n", res);
+                int tmp = Integer.parseInt(first) + Integer.parseInt(second);
+                System.out.println(tmp);
                 break;
             case "-":
-                res = first - second;
-                System.out.printf("%f\n", res);
+                tmp = Integer.parseInt(first) - Integer.parseInt(second);
+                System.out.println(tmp);
                 break;
             case "*":
-                res = first * second;
-                System.out.printf("%f\n", res);
+                tmp = Integer.parseInt(first) * Integer.parseInt(second);
+                System.out.println(tmp);
                 break;
             case "/":
-                res = first / second;
-                System.out.printf("%f\n", res);
+                tmp = Integer.parseInt(first) / Integer.parseInt(second);
+                System.out.println(tmp);
+                break;
+            case "tbs":
+                System.out.println(Integer.toBinaryString(Integer.parseInt(second)));
                 break;
             default:
-                System.out.println("Нет действия");
-                break;
+                System.out.println("Действие не поддерживается");
+
         }
-        iScanner.close();
+        scanner.close();
     }
 }
