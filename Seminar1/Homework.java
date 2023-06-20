@@ -5,7 +5,7 @@ import java.util.*;
 public class Homework {
     // Task 1
     static int rnd() {
-        int i = new Random().nextInt(1500, 2000);
+        int i = new Random().nextInt(0, 2000);
         return (i);
     }
 
@@ -20,35 +20,23 @@ public class Homework {
     }
 
     // Task 3
-    static int[] mult(int i) {
-        int count = 0;
+    static ArrayList<Integer> mult(int i, int n) {
+        ArrayList<Integer> m1 = new ArrayList<>();
         for (int j = i; j <= Short.MAX_VALUE; j++) { // Short.MAX_VALUE = 32767
-            if (j % i == 0)
-                count++;
+            if (j % n == 0)
+                m1.add(j);
         }
-        int[] array = new int[count];
-        count = 0;
-        for (int j = i; j <= Short.MAX_VALUE && count <= array.length; j++, count++) {
-            if (j % i == 0)
-                array[count] = j;
-        }
-        return (array);
+        return (m1);
     }
 
     // Task 4
-    static int[] nonmult(int i) {
-        int count = 0;
+    static ArrayList<Integer> nonmult(int i, int n) {
+        ArrayList<Integer> m2 = new ArrayList<>();
         for (int j = Short.MIN_VALUE; j <= i; j++) { // Short.MIN_VALUE = -32768
-            if (j % i == 0)
-                count++;
+            if (j % n != 0)
+                m2.add(j);
         }
-        int[] array = new int[count];
-        count = 0;
-        for (int j = Short.MIN_VALUE; j >= Short.MIN_VALUE && count <= array.length; j++, count++) {
-            if (j % i == 0)
-                array[count] = j;
-        }
-        return (array);
+        return (m2);
     }
 
     public static void main(String[] args) {
@@ -56,9 +44,9 @@ public class Homework {
         System.out.println(i);
         int n = bits(i);
         System.out.println(n);
-        int[] m1 = mult(i);
-        System.out.println(m1);
-        int[] m2 = nonmult(i);
-        System.out.println(m2);
+        ArrayList<Integer> m1 = mult(i, n);
+        System.out.println(m1.size());
+        ArrayList<Integer> m2 = nonmult(i, n);
+        System.out.println(m2.size());
     }
 }
