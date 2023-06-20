@@ -3,12 +3,11 @@
 package Lecture1;
 
 import java.util.*;
-import java.lang.Math;
 
 public class task1 {
 
-    private static Random random = new Random();
-    private static Scanner input = new Scanner(System.in);
+    public static Random random = new Random();
+    public static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
 

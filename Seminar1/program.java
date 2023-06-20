@@ -10,10 +10,10 @@ public class program {
         int i = 't';
         float f = .543f;
         System.out.println(f);
-        long l;
-        double d;
-        short sh;
-        byte b;
+        // long l;
+        // double d;
+        // short sh;
+        // byte b;
         char ch = 'g';
         System.out.println(ch);
         boolean b1 = false;

@@ -2,11 +2,13 @@
 
 package Lecture1;
 
-import java.util.*;
-import java.lang.Math;
+// import java.util.*;
+// import java.lang.Math;
 
 public class task2 {
-    private static Random random = new Random();
-    private static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        // private static Random random = new Random();
+        // private static Scanner input = new Scanner(System.in);
+    }
 
 }

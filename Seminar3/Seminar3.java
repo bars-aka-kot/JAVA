@@ -11,11 +11,12 @@ public class Seminar3 {
         ArrayList<Integer> list = new ArrayList<>();
         ArrayList<Integer> list2 = new ArrayList<>();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             list.add(new Random().nextInt(15));
             list2.add(new Random().nextInt(15));
         }
-
+        System.out.println(list.size());
+        System.out.println(list2.size());
         // list.add(1); //Integer
         // list.add(.24f); //Float
         // list.add("Привет!"); //String
@@ -51,18 +52,18 @@ public class Seminar3 {
         // list.retainAll(list2);
         // list.removeAll(list2);
 
-        list.sort(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                if (o1 % 3 != 0)
-                    return 0;
-                if (o2 % 2 == 0)
-                    return 1;
-                return -1;
-            }
-        });
+        // list.sort(new Comparator<Integer>() {
+        // @Override
+        // public int compare(Integer o1, Integer o2) {
+        // if (o1 % 3 != 0)
+        // return 0;
+        // if (o2 % 2 == 0)
+        // return 1;
+        // return -1;
+        // }
+        // });
 
-        System.out.println(list);
+        // System.out.println(list);
 
         // for (int i = 0; i < list.size(); i++) {
         // System.out.println(list.get(i));
@@ -91,6 +92,7 @@ public class Seminar3 {
         LinkedList<Integer> integers = new LinkedList<>();
         integers.add(12);
         integers.add(0, 12);
+
     }
 
 }
