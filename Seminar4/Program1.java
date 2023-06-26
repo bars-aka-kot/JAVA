@@ -13,7 +13,7 @@ public class Program1 {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
         System.out.print("Введите количество пользователей: ");
-        int n = iScanner.nextInt();
+        int n = Integer.parseInt(iScanner.nextLine());
         String[] users = new String[n];
         for (int i = 0; i < users.length; i++) {
             System.out.print("Введите фамилию: ");
