@@ -5,6 +5,7 @@
 *реализовать сортировку по возрасту и полу с использованием индексов */
 package Seminar4;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
@@ -100,3 +101,35 @@ public class Program1 {
         }
     }
 }
+
+/*
+ * пример простой сортировки массива индексов по элементам другого массива
+ * 
+ * ArrayList<Integer> age = new ArrayList<>();
+ * ArrayList<Integer> id = new ArrayList<>();
+ * 
+ * age.add(4)
+ * age.add(7)
+ * age.add(2)
+ * age.add(8)
+ * age.add(3)
+ * 
+ * id.add(0)
+ * id.add(1)
+ * id.add(2)
+ * id.add(3)
+ * id.add(4)
+ * 
+ * Collections.sort(id, Comparator<Integer>() {
+ * 
+ * @Override
+ * public int compare(Integer o1, Integer o2){
+ * return age.get(o1) - age.get(o2)
+ * }
+ * })
+ * 
+ * System.out.println(id) // [2,4,0,1,3]
+ * // после этого вызываем из peoples данные по id
+ * // Или можно упростить через лямбда-функцию
+ * Collections.sort(id, (o1, o2) -> age.get(o1) - age.get(o2))
+ */
