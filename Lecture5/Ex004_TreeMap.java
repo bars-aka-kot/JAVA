@@ -2,6 +2,7 @@ package Lecture5;
 
 import java.util.*;
 
+// TreeMap - упорядоченный массив данных
 public class Ex004_TreeMap {
     public static void main(String[] args) {
         TreeMap<Integer, String> tMap = new TreeMap<>();

@@ -2,6 +2,8 @@ package Lecture5;
 
 import java.util.*;
 
+// HashMap - несортированный массив, может менять расположение элементов
+// Ключ - уникальный, значение - может быть неуникальное
 public class Ex001_HashMap {
     public static void main(String[] args) {
         Map<Integer, String> db = new HashMap<>();
