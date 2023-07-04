@@ -5,7 +5,6 @@
 *реализовать сортировку по возрасту и полу с использованием индексов */
 package Seminar4;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
